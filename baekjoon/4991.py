@@ -64,5 +64,5 @@ while True:
                 temp += dists[start][end]
                 start = end
             answer = min(answer, temp)
-        print("answer : ", answer)
+        print(answer)
 
