@@ -15,4 +15,5 @@ for i in range(len(arr)):
     if not stack:
         answer.append(0)
     stack.append([i, arr[i]])
-print(answer)
+
+print(' '.join(map(str, answer)))
