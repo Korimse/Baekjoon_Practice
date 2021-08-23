@@ -9,8 +9,13 @@ temp = []
 sumv = 0
 for i in range(len(arr)):
     if i % 3 == 2:
-        continue
+        temp.append(arr[i])
+        print(temp)
+        temp.sort(reverse=True)
+        sumv += temp[0]+temp[1]
+        temp = []
     else:
-        sumv += arr[i]
-
+        temp.append(arr[i])
+if temp:
+    sumv += sum(temp)
 print(sumv)
